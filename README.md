@@ -29,3 +29,16 @@ terraform plan
 terraform apply
 terraform destroy
 ```
+
+## Suggested Pre-Requsites
+- Create a demo project
+- pull down github repo (insert link)
+
+## After Demo
+- Reset unique project ID to PROJECT_ID and push to git
+```
+cd ~/solutions-terraform-cloudbuild-gitops
+sed -i s/$PROJECT_ID/PROJECT_ID/g environments/*/terraform.tfvars
+sed -i s/$PROJECT_ID/PROJECT_ID/g environments/*/backend.tf
+```
+

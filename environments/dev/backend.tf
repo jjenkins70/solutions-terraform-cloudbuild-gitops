@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "fema-devops-demo-tfstate"
+    bucket = "nih-terraform-devops-demo-tfstate"
     prefix = "env/dev"
   }
 }
