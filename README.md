@@ -36,6 +36,11 @@ terraform destroy
 - Configure Demo Project
     - `PROJECT_ID=$(gcloud config get-value project)`
     - `gcloud services enable cloudbuild.googleapis.com compute.googleapis.com`
+git commands for CLI ease of use
+```
+git checkout -b new_branch (off of dev)
+git remote add upstream https://github.com/jjenkins70/solutions-terraform-cloudbuild-gitops
+```
 
 
 ## After Demo
