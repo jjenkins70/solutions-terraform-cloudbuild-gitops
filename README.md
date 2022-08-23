@@ -40,6 +40,7 @@ git commands for CLI ease of use
 ```
 git checkout -b new_branch (off of dev)
 git remote add upstream https://github.com/jjenkins70/solutions-terraform-cloudbuild-gitops
+git push -u origin new_branch
 ```
 
 
