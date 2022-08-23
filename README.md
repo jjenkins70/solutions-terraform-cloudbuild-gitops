@@ -31,8 +31,12 @@ terraform destroy
 ```
 
 ## Suggested Pre-Requsites
-- Create a demo project
-- pull down github repo (insert link)
+- Create a demo project so you can easily destroy it later!
+- Clone github repo (https://github.com/jjenkins70/solutions-terraform-cloudbuild-gitops)
+- Configure Demo Project
+    - `PROJECT_ID=$(gcloud config get-value project)`
+    - `gcloud services enable cloudbuild.googleapis.com compute.googleapis.com`
+
 
 ## After Demo
 - Reset unique project ID to PROJECT_ID and push to git
