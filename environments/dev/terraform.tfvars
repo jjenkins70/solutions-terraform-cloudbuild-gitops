@@ -1,1 +1,1 @@
-project="nih-terraform-devops-demo"
+project="PROJECT_ID"
