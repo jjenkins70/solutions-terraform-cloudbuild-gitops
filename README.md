@@ -52,5 +52,4 @@ sed -i s/$PROJECT_ID/PROJECT_ID/g environments/*/terraform.tfvars
 sed -i s/$PROJECT_ID/PROJECT_ID/g environments/*/backend.tf
 ```
 - Update modules/firewall/http-server to http-server2
-
-
+Updated for live demo
