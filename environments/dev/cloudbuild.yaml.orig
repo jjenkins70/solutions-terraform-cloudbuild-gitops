@@ -31,10 +31,10 @@ steps:
   - '-c'
   - |
       if [ -d "environments/$BRANCH_NAME/" ]; then
-        cd $BRANCH_NAME
+        cd environments/$BRANCH_NAME
         terraform init
       else
-        for dir in /*/
+        for dir in environments/*/
         do 
           cd ${dir}   
           env=${dir%*/}
@@ -55,11 +55,11 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "$BRANCH_NAME/" ]; then
+      if [ -d "environments/$BRANCH_NAME/" ]; then
         cd environments/$BRANCH_NAME
         terraform plan
       else
-        for dir in /*/
+        for dir in environments/*/
         do 
           cd ${dir}   
           env=${dir%*/}
@@ -82,7 +82,7 @@ steps:
   - '-c'
   - | 
       if [ -d "environments/$BRANCH_NAME/" ]; then
-        cd $BRANCH_NAME      
+        cd environments/$BRANCH_NAME      
         terraform apply -auto-approve
       else
         echo "***************************** SKIPPING APPLYING *******************************"
