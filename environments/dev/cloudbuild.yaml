@@ -19,7 +19,7 @@ steps:
   args: 
   - '-c'
   - | 
-      BRANCH_NAME="dev"   #Hardcode 
+      export BRANCH_NAME=dev
       echo "***********************"
       echo "$BRANCH_NAME"
       echo "***********************"
