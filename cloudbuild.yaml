@@ -9,9 +9,7 @@
 # 2) Need to convert to use docker as gcloud will not run
 
 # 3) Can it reach modulesf declared in the higher folders?
-
 # 4) If yes, Modules can be versioned in separate folders and we can upgrade modules per tier.
-
 # 5) replicate this in every project in every tier.
 
 # 6) Understand the branching strategy and GitHub "codeowners" options
@@ -19,8 +17,6 @@
 # 7) NOTE that in the backend.tf file, the state file has prefix = "env/dev/foso"
 
 #     I assume this can be done for every project in every tier thereby separating the state files
-
- 
 
 ## SB END
 
