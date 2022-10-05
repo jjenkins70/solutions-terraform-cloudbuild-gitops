@@ -22,7 +22,8 @@ provider "google" {
 }
 
 module "vpc" {
-  source  = "../../modules/vpc"
+  #source  = "../../modules/vpc"
+   source = github.com/jjenkins70/solutions-terraform-cloudbuild-gitops
   project = "${var.project}"
   env     = "${local.env}"
 }
