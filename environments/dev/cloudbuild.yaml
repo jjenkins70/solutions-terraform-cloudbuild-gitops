@@ -30,7 +30,7 @@ steps:
   args: 
   - '-c'
   - |
-      export BRANCH_NAME=dev
+      BRANCH_NAME=dev
       echo $BRANCH_NAME
         terraform init
 
@@ -41,7 +41,6 @@ steps:
   args: 
   - '-c'
   - | 
-      #set BRANCH_NAME=dev
       echo $BRANCH_NAME
         terraform plan 
 # [END tf-plan]
