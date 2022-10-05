@@ -37,7 +37,7 @@ module "http_server" {
 
 module "firewall" {
   #source  = "../../modules/firewall"
-  source = "github.com/jjenkins70/solutions-terraform-cloudbuild-gitops/modules/fireall"
+  source = "github.com/jjenkins70/solutions-terraform-cloudbuild-gitops/modules/firewall"
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
 }
