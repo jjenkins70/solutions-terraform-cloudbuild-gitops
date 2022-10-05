@@ -44,7 +44,7 @@ steps:
 
     echo "Start"
 
-    for d in */; do
+    for d in */environments/*; do
 
       readme="${d}README.md"
 
