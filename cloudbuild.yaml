@@ -54,7 +54,7 @@ steps:
 
       fi
 
-      config="${d}cloudbuild-dev.yaml"
+      config="${d}cloudbuild.yaml"
 
       if [[ ! -f "${config}" ]]; then
 
