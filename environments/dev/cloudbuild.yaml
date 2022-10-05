@@ -19,6 +19,7 @@ steps:
   args: 
   - '-c'
   - | 
+      export BRANCH_NAME=dev   #Hardcode 
       echo "***********************"
       echo "$BRANCH_NAME"
       echo "***********************"
@@ -29,7 +30,7 @@ steps:
   args: 
   - '-c'
   - |
-      set BRANCH_NAME=dev
+      export BRANCH_NAME=dev
       echo $BRANCH_NAME
         terraform init
 
